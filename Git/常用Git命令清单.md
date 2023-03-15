@@ -223,6 +223,9 @@ $ git show [commit]:[filename]
 
 # 显示当前分支的最近几次提交
 $ git reflog
+
+# 查看某个分支父节点
+ git reflog --date=local | grep [branch]
 ```
 
 ## 远程同步
