@@ -225,7 +225,7 @@ $ git show [commit]:[filename]
 $ git reflog
 
 # 查看某个分支父节点
- git reflog --date=local | grep [branch]
+$ git reflog --date=local | grep [branch]
 ```
 
 ## 远程同步
