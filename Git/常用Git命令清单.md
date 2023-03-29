@@ -277,14 +277,15 @@ $ git checkout .
 # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
 $ git reset [file]
 
-# 重置暂存区与工作区，与上一次commit保持一致
-$ git reset --hard
+# 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
+$ git reset --hard [commit]
+
+# 重置当前分支的HEAD为指定commi，但暂存区和工作区不变
+$ git reset --soft [commit]
 
 # 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
 $ git reset [commit]
 
-# 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
-$ git reset --hard [commit]
 
 # 重置当前HEAD为指定commit，但保持暂存区和工作区不变
 $ git reset --keep [commit]
